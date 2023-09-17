@@ -35,12 +35,11 @@ public class AllotmentClassroom extends javax.swing.JFrame {
         jComboBox2 = new javax.swing.JComboBox<>();
         jButton1 = new javax.swing.JButton();
         jMenuBar2 = new javax.swing.JMenuBar();
-        jMenu3 = new javax.swing.JMenu();
-        jMenu4 = new javax.swing.JMenu();
-        jMenu5 = new javax.swing.JMenu();
+        aTeacher = new javax.swing.JMenu();
+        aSubjects = new javax.swing.JMenu();
         jMenu6 = new javax.swing.JMenu();
-        jMenu1 = new javax.swing.JMenu();
-        jMenu2 = new javax.swing.JMenu();
+        Allotment = new javax.swing.JMenu();
+        gTable = new javax.swing.JMenu();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -71,23 +70,61 @@ public class AllotmentClassroom extends javax.swing.JFrame {
             }
         });
 
-        jMenu3.setText("Add Teachers ");
-        jMenuBar2.add(jMenu3);
+        aTeacher.setText("Add Teachers ");
+        aTeacher.addMenuListener(new javax.swing.event.MenuListener() {
+            public void menuCanceled(javax.swing.event.MenuEvent evt) {
+            }
+            public void menuDeselected(javax.swing.event.MenuEvent evt) {
+            }
+            public void menuSelected(javax.swing.event.MenuEvent evt) {
+                aTeacherMenuSelected(evt);
+            }
+        });
+        aTeacher.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                aTeacherActionPerformed(evt);
+            }
+        });
+        jMenuBar2.add(aTeacher);
 
-        jMenu4.setText("Add Subjects");
-        jMenuBar2.add(jMenu4);
-
-        jMenu5.setText("AddSubjects");
-        jMenuBar2.add(jMenu5);
+        aSubjects.setText("Add Subjects");
+        aSubjects.addMenuListener(new javax.swing.event.MenuListener() {
+            public void menuCanceled(javax.swing.event.MenuEvent evt) {
+            }
+            public void menuDeselected(javax.swing.event.MenuEvent evt) {
+            }
+            public void menuSelected(javax.swing.event.MenuEvent evt) {
+                aSubjectsMenuSelected(evt);
+            }
+        });
+        jMenuBar2.add(aSubjects);
 
         jMenu6.setText("Add Classrooms");
+        jMenu6.addMenuListener(new javax.swing.event.MenuListener() {
+            public void menuCanceled(javax.swing.event.MenuEvent evt) {
+            }
+            public void menuDeselected(javax.swing.event.MenuEvent evt) {
+            }
+            public void menuSelected(javax.swing.event.MenuEvent evt) {
+                jMenu6MenuSelected(evt);
+            }
+        });
         jMenuBar2.add(jMenu6);
 
-        jMenu1.setText("Allotment");
-        jMenuBar2.add(jMenu1);
+        Allotment.setText("Allotment");
+        jMenuBar2.add(Allotment);
 
-        jMenu2.setText("Generate timetable");
-        jMenuBar2.add(jMenu2);
+        gTable.setText("Generate timetable");
+        gTable.addMenuListener(new javax.swing.event.MenuListener() {
+            public void menuCanceled(javax.swing.event.MenuEvent evt) {
+            }
+            public void menuDeselected(javax.swing.event.MenuEvent evt) {
+            }
+            public void menuSelected(javax.swing.event.MenuEvent evt) {
+                gTableMenuSelected(evt);
+            }
+        });
+        jMenuBar2.add(gTable);
 
         setJMenuBar(jMenuBar2);
 
@@ -140,6 +177,32 @@ public class AllotmentClassroom extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_jButton1ActionPerformed
 
+    private void aTeacherMenuSelected(javax.swing.event.MenuEvent evt) {//GEN-FIRST:event_aTeacherMenuSelected
+        AddTeacher addTeacherFrame = new AddTeacher();
+        addTeacherFrame.setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_aTeacherMenuSelected
+
+    private void aTeacherActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_aTeacherActionPerformed
+
+    }//GEN-LAST:event_aTeacherActionPerformed
+
+    private void aSubjectsMenuSelected(javax.swing.event.MenuEvent evt) {//GEN-FIRST:event_aSubjectsMenuSelected
+        AddSubjects aSubject = new AddSubjects();
+        aSubject.setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_aSubjectsMenuSelected
+
+    private void jMenu6MenuSelected(javax.swing.event.MenuEvent evt) {//GEN-FIRST:event_jMenu6MenuSelected
+
+    }//GEN-LAST:event_jMenu6MenuSelected
+
+    private void gTableMenuSelected(javax.swing.event.MenuEvent evt) {//GEN-FIRST:event_gTableMenuSelected
+        GenerateTimeTable gTable = new GenerateTimeTable();
+        gTable.setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_gTableMenuSelected
+
     /**
      * @param args the command line arguments
      */
@@ -176,15 +239,14 @@ public class AllotmentClassroom extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JMenu Allotment;
+    private javax.swing.JMenu aSubjects;
+    private javax.swing.JMenu aTeacher;
+    private javax.swing.JMenu gTable;
     private javax.swing.JButton jButton1;
     private javax.swing.JComboBox<String> jComboBox1;
     private javax.swing.JComboBox<String> jComboBox2;
     private javax.swing.JLabel jLabel2;
-    private javax.swing.JMenu jMenu1;
-    private javax.swing.JMenu jMenu2;
-    private javax.swing.JMenu jMenu3;
-    private javax.swing.JMenu jMenu4;
-    private javax.swing.JMenu jMenu5;
     private javax.swing.JMenu jMenu6;
     private javax.swing.JMenuBar jMenuBar2;
     private javax.swing.JScrollPane jScrollPane1;
