@@ -81,11 +81,15 @@ public class AddTeacher extends javax.swing.JFrame {
                 .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(125, 125, 125)
                 .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 48, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(387, Short.MAX_VALUE))
+                .addContainerGap(416, Short.MAX_VALUE))
         );
+
+        jMenuBar2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 240)));
+        jMenuBar2.setForeground(new java.awt.Color(0, 0, 240));
 
         aTeacher.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
         aTeacher.setText("Add Teachers ");
+        aTeacher.setBorderPainted(true);
         aTeacher.addMenuListener(new javax.swing.event.MenuListener() {
             public void menuCanceled(javax.swing.event.MenuEvent evt) {
             }
@@ -130,8 +134,18 @@ public class AddTeacher extends javax.swing.JFrame {
 
         Allotment.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
         Allotment.setText("Allotment");
+        Allotment.addMenuListener(new javax.swing.event.MenuListener() {
+            public void menuCanceled(javax.swing.event.MenuEvent evt) {
+            }
+            public void menuDeselected(javax.swing.event.MenuEvent evt) {
+            }
+            public void menuSelected(javax.swing.event.MenuEvent evt) {
+                AllotmentMenuSelected(evt);
+            }
+        });
         jMenuBar2.add(Allotment);
 
+        gTable.setBackground(new java.awt.Color(255, 153, 153));
         gTable.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
         gTable.setText("Generate timetable");
         gTable.addMenuListener(new javax.swing.event.MenuListener() {
@@ -141,6 +155,11 @@ public class AddTeacher extends javax.swing.JFrame {
             }
             public void menuSelected(javax.swing.event.MenuEvent evt) {
                 gTableMenuSelected(evt);
+            }
+        });
+        gTable.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                gTableActionPerformed(evt);
             }
         });
         jMenuBar2.add(gTable);
@@ -165,15 +184,27 @@ public class AddTeacher extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_jButton1ActionPerformed
 
-    private void aTeacherMenuSelected(javax.swing.event.MenuEvent evt) {//GEN-FIRST:event_aTeacherMenuSelected
-        AddTeacher addTeacherFrame = new AddTeacher();
-        addTeacherFrame.setVisible(true);
+    private void gTableActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_gTableActionPerformed
+        GenerateTimeTable gTable = new GenerateTimeTable();
+        gTable.setVisible(true);
         this.dispose();
-    }//GEN-LAST:event_aTeacherMenuSelected
+    }//GEN-LAST:event_gTableActionPerformed
 
-    private void aTeacherActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_aTeacherActionPerformed
+    private void gTableMenuSelected(javax.swing.event.MenuEvent evt) {//GEN-FIRST:event_gTableMenuSelected
+        GenerateTimeTable gTable = new GenerateTimeTable();
+        gTable.setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_gTableMenuSelected
 
-    }//GEN-LAST:event_aTeacherActionPerformed
+    private void AllotmentMenuSelected(javax.swing.event.MenuEvent evt) {//GEN-FIRST:event_AllotmentMenuSelected
+
+    }//GEN-LAST:event_AllotmentMenuSelected
+
+    private void jMenu6MenuSelected(javax.swing.event.MenuEvent evt) {//GEN-FIRST:event_jMenu6MenuSelected
+        AddClassRoom aClassRoom = new AddClassRoom();
+        aClassRoom.setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_jMenu6MenuSelected
 
     private void aSubjectsMenuSelected(javax.swing.event.MenuEvent evt) {//GEN-FIRST:event_aSubjectsMenuSelected
         AddSubjects aSubject = new AddSubjects();
@@ -181,15 +212,15 @@ public class AddTeacher extends javax.swing.JFrame {
         this.dispose();
     }//GEN-LAST:event_aSubjectsMenuSelected
 
-    private void jMenu6MenuSelected(javax.swing.event.MenuEvent evt) {//GEN-FIRST:event_jMenu6MenuSelected
+    private void aTeacherActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_aTeacherActionPerformed
 
-    }//GEN-LAST:event_jMenu6MenuSelected
+    }//GEN-LAST:event_aTeacherActionPerformed
 
-    private void gTableMenuSelected(javax.swing.event.MenuEvent evt) {//GEN-FIRST:event_gTableMenuSelected
-        GenerateTimeTable gTable = new GenerateTimeTable();
-        gTable.setVisible(true);
+    private void aTeacherMenuSelected(javax.swing.event.MenuEvent evt) {//GEN-FIRST:event_aTeacherMenuSelected
+        AddTeacher addTeacherFrame = new AddTeacher();
+        addTeacherFrame.setVisible(true);
         this.dispose();
-    }//GEN-LAST:event_gTableMenuSelected
+    }//GEN-LAST:event_aTeacherMenuSelected
 
     /**
      * @param args the command line arguments

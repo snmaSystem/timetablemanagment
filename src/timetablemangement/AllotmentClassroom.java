@@ -122,6 +122,15 @@ public class AllotmentClassroom extends javax.swing.JFrame {
 
         Allotment.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
         Allotment.setText("Allotment");
+        Allotment.addMenuListener(new javax.swing.event.MenuListener() {
+            public void menuCanceled(javax.swing.event.MenuEvent evt) {
+            }
+            public void menuDeselected(javax.swing.event.MenuEvent evt) {
+            }
+            public void menuSelected(javax.swing.event.MenuEvent evt) {
+                AllotmentMenuSelected(evt);
+            }
+        });
         jMenuBar2.add(Allotment);
 
         gTable.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
@@ -204,6 +213,10 @@ public class AllotmentClassroom extends javax.swing.JFrame {
 
     private void jMenu6MenuSelected(javax.swing.event.MenuEvent evt) {//GEN-FIRST:event_jMenu6MenuSelected
 
+        AddClassRoom aClassRoom = new AddClassRoom();
+        aClassRoom.setVisible(true);
+        this.dispose();
+           
     }//GEN-LAST:event_jMenu6MenuSelected
 
     private void gTableMenuSelected(javax.swing.event.MenuEvent evt) {//GEN-FIRST:event_gTableMenuSelected
@@ -211,6 +224,10 @@ public class AllotmentClassroom extends javax.swing.JFrame {
         gTable.setVisible(true);
         this.dispose();
     }//GEN-LAST:event_gTableMenuSelected
+
+    private void AllotmentMenuSelected(javax.swing.event.MenuEvent evt) {//GEN-FIRST:event_AllotmentMenuSelected
+        
+    }//GEN-LAST:event_AllotmentMenuSelected
 
     /**
      * @param args the command line arguments
