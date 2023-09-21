@@ -3,12 +3,16 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/alias/OneDrive/Documents/NetBeansProjects/timetablemangement/src/timetablemangement/AddTeacher.java</file>
-            <file>file:/C:/Users/alias/OneDrive/Documents/NetBeansProjects/timetablemangement/src/timetablemangement/AddClassRoom.java</file>
-            <file>file:/C:/Users/alias/OneDrive/Documents/NetBeansProjects/timetablemangement/src/timetablemangement/Login.java</file>
-            <file>file:/C:/Users/alias/OneDrive/Documents/NetBeansProjects/timetablemangement/src/timetablemangement/AllotmentClassroom.java</file>
-            <file>file:/C:/Users/alias/OneDrive/Documents/NetBeansProjects/timetablemangement/src/timetablemangement/AddSubjects.java</file>
-            <file>file:/C:/Users/alias/OneDrive/Documents/NetBeansProjects/timetablemangement/src/timetablemangement/GenerateTimeTable.java</file>
+            <file>file:/C:/Users/nikku/OneDrive/Desktop/Nikita/TT/timetablemanagment/timetablemanagment-main/src/timetablemangement/AllotmentClassroom.java</file>
+            <file>file:/C:/Users/nikku/OneDrive/Desktop/Nikita/TT/timetablemanagment/timetablemanagment-main/src/timetablemangement/Login.java</file>
+            <file>file:/C:/Users/nikku/OneDrive/Desktop/Nikita/TT/timetablemanagment/timetablemanagment-main/src/timetablemangement/UpdateandDelete.java</file>
+            <file>file:/C:/Users/nikku/OneDrive/Desktop/Nikita/TT/timetablemanagment/timetablemanagment-main/src/timetablemangement/AllotmentTheory.java</file>
+            <file>file:/C:/Users/nikku/OneDrive/Desktop/Nikita/TT/timetablemanagment/timetablemanagment-main/src/timetablemangement/Faculty.java</file>
+            <file>file:/C:/Users/nikku/OneDrive/Desktop/Nikita/TT/timetablemanagment/timetablemanagment-main/src/timetablemangement/NewFaculty.java</file>
+            <file>file:/C:/Users/nikku/OneDrive/Desktop/Nikita/TT/timetablemanagment/timetablemanagment-main/src/timetablemangement/GenerateTimeTable.java</file>
+            <file>file:/C:/Users/nikku/OneDrive/Desktop/Nikita/TT/timetablemanagment/timetablemanagment-main/src/timetablemangement/AddClassRoom.java</file>
+            <file>file:/C:/Users/nikku/OneDrive/Desktop/Nikita/TT/timetablemanagment/timetablemanagment-main/src/timetablemangement/AddSubjects.java</file>
+            <file>file:/C:/Users/nikku/OneDrive/Desktop/Nikita/TT/timetablemanagment/timetablemanagment-main/src/timetablemangement/AddTeacher.java</file>
         </group>
     </open-files>
 </project-private>

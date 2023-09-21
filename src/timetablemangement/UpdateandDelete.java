@@ -64,10 +64,19 @@ public class UpdateandDelete extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jLabel1.setText("Update and Delete");
+        jLabel1.setFont(new java.awt.Font("Candara", 0, 24)); // NOI18N
+        jLabel1.setText("  Update & Delete");
 
+        jLabel2.setFont(new java.awt.Font("Microsoft New Tai Lue", 0, 14)); // NOI18N
         jLabel2.setText("Faculty Name : ");
 
+        facName1jTextField1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                facName1jTextField1ActionPerformed(evt);
+            }
+        });
+
+        jButton1.setFont(new java.awt.Font("Verdana", 0, 14)); // NOI18N
         jButton1.setText("Search");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -75,12 +84,16 @@ public class UpdateandDelete extends javax.swing.JFrame {
             }
         });
 
+        jLabel3.setFont(new java.awt.Font("Microsoft New Tai Lue", 0, 14)); // NOI18N
         jLabel3.setText("Faculty Name :");
 
+        jLabel4.setFont(new java.awt.Font("Microsoft New Tai Lue", 0, 14)); // NOI18N
         jLabel4.setText("Subject Name :");
 
+        jLabel5.setFont(new java.awt.Font("Microsoft New Tai Lue", 0, 14)); // NOI18N
         jLabel5.setText("Subject Code :");
 
+        updjButton2.setFont(new java.awt.Font("Verdana", 0, 14)); // NOI18N
         updjButton2.setText("UPDATE");
         updjButton2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -88,6 +101,7 @@ public class UpdateandDelete extends javax.swing.JFrame {
             }
         });
 
+        deletejButton3.setFont(new java.awt.Font("Verdana", 0, 14)); // NOI18N
         deletejButton3.setText("DELETE");
         deletejButton3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -108,34 +122,31 @@ public class UpdateandDelete extends javax.swing.JFrame {
                         .addGap(424, 424, 424)
                         .addComponent(jLabel1))
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(59, 59, 59)
-                        .addComponent(jLabel2)
-                        .addGap(18, 18, 18)
+                        .addGap(53, 53, 53)
+                        .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 94, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(43, 43, 43)
                         .addComponent(facName1jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 252, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(140, 140, 140)
+                        .addGap(121, 121, 121)
                         .addComponent(jButton1))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(62, 62, 62)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                                .addComponent(jLabel4)
-                                .addGap(38, 38, 38))
-                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                                .addComponent(jLabel5)
-                                .addGap(42, 42, 42))
-                            .addGroup(layout.createSequentialGroup()
-                                .addComponent(jLabel3)
-                                .addGap(41, 41, 41)))
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                            .addComponent(facName2jTextField1, javax.swing.GroupLayout.DEFAULT_SIZE, 248, Short.MAX_VALUE)
-                            .addComponent(subjNamejTextField1, javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(subjCodejTextField1, javax.swing.GroupLayout.Alignment.LEADING)))
                     .addGroup(layout.createSequentialGroup()
                         .addGap(97, 97, 97)
                         .addComponent(updjButton2)
                         .addGap(136, 136, 136)
-                        .addComponent(deletejButton3)))
-                .addContainerGap(318, Short.MAX_VALUE))
+                        .addComponent(deletejButton3))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(55, 55, 55)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel5)
+                            .addGroup(layout.createSequentialGroup()
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                    .addComponent(jLabel4)
+                                    .addComponent(jLabel3))
+                                .addGap(47, 47, 47)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                                    .addComponent(facName2jTextField1, javax.swing.GroupLayout.DEFAULT_SIZE, 248, Short.MAX_VALUE)
+                                    .addComponent(subjNamejTextField1, javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(subjCodejTextField1, javax.swing.GroupLayout.Alignment.LEADING))))))
+                .addGap(18, 306, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -146,10 +157,10 @@ public class UpdateandDelete extends javax.swing.JFrame {
                 .addComponent(jSeparator1, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel2)
                     .addComponent(facName1jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton1))
-                .addGap(18, 18, 18)
+                    .addComponent(jButton1)
+                    .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(41, 41, 41)
                 .addComponent(jSeparator2, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
@@ -169,7 +180,7 @@ public class UpdateandDelete extends javax.swing.JFrame {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(updjButton2)
                     .addComponent(deletejButton3))
-                .addContainerGap(376, Short.MAX_VALUE))
+                .addGap(18, 332, Short.MAX_VALUE))
         );
 
         pack();
@@ -222,6 +233,10 @@ if(a==0)
     }
 }
     }//GEN-LAST:event_deletejButton3ActionPerformed
+
+    private void facName1jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_facName1jTextField1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_facName1jTextField1ActionPerformed
 
     /**
      * @param args the command line arguments
